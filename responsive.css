@@ -1,0 +1,513 @@
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media screen and (max-width:768px){
+
+/* ================= Header ================= */
+
+header{
+    flex-direction:column;
+    justify-content:center;
+    gap:18px;
+    padding:18px;
+    height:auto;
+}
+
+.logo img{
+    width:170px;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+}
+
+nav a{
+    font-size:15px;
+}
+
+.account-menu{
+    margin-left:0;
+}
+
+/* Account Dropdown */
+
+.account-dropdown{
+    width:260px;
+    right:50%;
+    transform:translateX(50%);
+    max-height:70vh;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+/* ================= Hero ================= */
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:45px 20px;
+    gap:30px;
+}
+
+.hero-image{
+    order:1;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:24px;
+}
+
+.hero-text{
+    order:2;
+    max-width:100%;
+}
+
+.hero-text h1{
+    font-size:48px;
+    line-height:1.1;
+}
+
+.hero-text p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.hero-text button{
+    width:220px;
+}
+
+/* ================= Features ================= */
+
+.feature-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.feature-image{
+    order:1;
+    text-align:center;
+}
+
+.feature-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:24px;
+}
+
+.feature-grid{
+    order:2;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.feature-card{
+    width:100%;
+    padding:22px;
+}
+
+.feature-card h3{
+    font-size:28px;
+}
+
+.feature-card p{
+    font-size:15px;
+}
+
+/* ================= Quote ================= */
+
+.story-quote{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
+}
+
+.quote-image{
+    order:1;
+}
+
+.quote-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:24px;
+}
+
+.quote-text{
+    order:2;
+}
+
+.quote-text h2{
+    font-size:34px;
+}
+
+.quote-text p{
+    font-size:16px;
+}
+
+/* ================= Reading Corner ================= */
+
+.reading-corner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:30px;
+}
+
+.reading-image{
+    order:1;
+}
+
+.reading-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:24px;
+}
+
+.reading-text{
+    order:2;
+}
+
+.reading-text h2{
+    font-size:34px;
+}
+
+.reading-text p{
+    font-size:16px;
+}
+
+/* ================= Novels ================= */
+
+.all-novels{
+    width:94%;
+    margin:35px auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.novel-card{
+    width:100%;
+    border-radius:16px;
+}
+
+.novel-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.novel-info{
+    padding:12px;
+}
+
+.genre{
+    padding:5px 10px;
+    font-size:11px;
+}
+
+.novel-info h3{
+    font-size:17px;
+    line-height:1.35;
+    margin:8px 0;
+}
+
+.novel-meta{
+    font-size:11px;
+    gap:8px;
+    margin:10px 0;
+}
+
+.description{
+    display:none;
+}
+
+.read-btn{
+    padding:10px;
+    font-size:13px;
+}
+
+/* ================= Footer ================= */
+
+.footer-top{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:35px;
+}
+
+.footer-brand img{
+    margin:auto;
+}
+
+.footer-brand p{
+    margin:auto;
+}
+
+}
+/* ==========================
+   MOBILE - AVATAR GRID
+========================== */
+
+@media (max-width:768px){
+
+.avatar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    justify-items:center;
+
+}
+
+.avatar-grid img{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.avatar-popup,
+.avatar-container,
+.choose-avatar{
+
+    width:95%;
+
+    max-width:360px;
+
+    margin:20px auto;
+
+    overflow:hidden;
+
+    box-sizing:border-box;
+
+}
+
+}
+/* =====================================
+   READ PAGE MOBILE FIX
+===================================== */
+
+@media (max-width:768px){
+
+.read-container,
+.reader-container,
+.chapter-reader,
+.read-page{
+    width:92%;
+    max-width:360px;
+    margin:20px auto;
+    padding:20px;
+}
+
+
+/* Chapter Title */
+
+.chapter-title,
+.read-container h1,
+.chapter-reader h1{
+
+    font-size:34px;
+    line-height:1.2;
+    margin-bottom:20px;
+
+}
+
+
+/* Chapter text */
+
+.chapter-content,
+.reader-content,
+.read-container p{
+
+    font-size:16px;
+    line-height:1.8;
+}
+
+
+/* Empty chapter message */
+
+.no-chapter,
+.chapter-empty{
+
+    font-size:16px;
+    line-height:1.6;
+
+}
+
+
+/* Previous Next Buttons */
+
+.chapter-buttons{
+
+    display:flex;
+    gap:8px;
+    margin-top:25px;
+
+}
+
+
+.chapter-buttons button{
+
+    flex:1;
+    height:55px;
+    font-size:15px;
+    border-radius:14px;
+
+}
+
+}/* =====================================
+   NOVEL READER MOBILE STYLE
+===================================== */
+
+@media(max-width:768px){
+
+/* Reader Box */
+
+.chapter-reader,
+.read-container,
+.reader-box{
+
+    width:92%;
+    max-width:390px;
+    padding:22px;
+    margin:20px auto;
+    border-radius:20px;
+
+}
+
+
+/* Chapter Heading */
+
+.chapter-reader h1,
+.read-container h1{
+
+    font-size:32px;
+    line-height:1.2;
+    margin-bottom:25px;
+
+}
+
+
+/* Novel Reading Text */
+
+.chapter-content,
+.reader-content,
+.read-text{
+
+    font-size:15px;
+    line-height:2;
+    letter-spacing:0.2px;
+    text-align:left;
+
+}
+
+
+/* Empty Chapter Message */
+
+.no-chapter,
+.chapter-empty{
+
+    font-size:15px;
+    line-height:1.8;
+
+}
+
+
+/* Buttons Row */
+
+.chapter-buttons{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    margin-top:30px;
+
+}
+
+
+/* Buttons */
+
+.chapter-buttons button{
+
+    width:120px;
+    height:45px;
+    font-size:14px;
+    border-radius:12px;
+    padding:0;
+
+}
+
+
+}
+/* =================================
+   BOOKMARK + LIBRARY NOVEL IMAGE FIX
+================================= */
+
+.novel-card img,
+.library-card img,
+.bookmark-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:16px 16px 0 0;
+
+}
+
+
+/* Card size */
+
+.novel-card,
+.library-card,
+.bookmark-card{
+
+    overflow:hidden;
+    border-radius:18px;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.novel-card img,
+.library-card img,
+.bookmark-card img{
+
+    height:170px;
+
+}
+
+
+.novel-card,
+.library-card,
+.bookmark-card{
+
+    border-radius:15px;
+
+}
+
+}

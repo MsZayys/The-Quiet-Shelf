@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Library | The Quiet Shelf</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+     <div class="logo">
+       <img src="images/logo.png" alt="The Quiet Shelf Logo">
+     </div>
+
+       <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="novels.html">Novels</a>
+
+    <a href="about.html">About</a>
+
+    
+     <div class="account-menu">
+
+    <button class="account-btn" id="accountBtn">
+
+<div class="account-avatar">
+
+    <img
+        id="navbarAvatar"
+        src="images/default-user.png"
+        alt="Avatar"
+    >
+
+</div>
+
+        <span id="accountName">Account</span>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+
+    </button>
+
+    <div class="account-dropdown" id="dropdownMenu">
+
+        <div class="user-info">
+
+            <div class="avatar-large">
+
+    <img
+        id="dropdownAvatar"
+        src="images/default-user.png"
+        alt="Avatar"
+    >
+
+</div>
+
+            <h4 id="userName">Guest</h4>
+
+            <p id="userEmail">Please Login</p>
+
+        </div>
+
+        <hr>
+
+        <a href="login.html" id="loginLink">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Login
+        </a>
+
+        <a href="signup.html" id="signupLink">
+            <i class="fa-solid fa-user-plus"></i>
+            Create Account
+        </a>
+        <a href="profile.html" id="profileLink" style="display:none;">
+    <i class="fa-solid fa-user"></i>
+    Profile
+</a>
+        <a href="library.html" id="libraryLink" style="display:none;">
+            <i class="fa-solid fa-book"></i>
+            My Library
+        </a>
+
+        <a href="bookmarks.html" id="bookmarkLink" style="display:none;">
+            <i class="fa-solid fa-heart"></i>
+            Bookmarks
+        </a>
+
+        <a href="admin.html" id="adminLink" style="display:none;">
+            <i class="fa-solid fa-shield-halved"></i>
+            Admin Panel
+        </a>
+
+        <a href="#" id="logoutLink" style="display:none;">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+
+    </div>
+
+</div>
+
+</nav>
+
+       
+
+    </header>
+
+<section class="reading-container">
+
+<h1>📚 My Library</h1>
+
+<div id="libraryContainer">
+
+</div>
+
+</section>
+
+<script type="module" src="library.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="library.css">
+<script type="module" src="script.js"></script>
+<link rel="stylesheet" href="responsive.css">
+
+</body>
+
+</html>

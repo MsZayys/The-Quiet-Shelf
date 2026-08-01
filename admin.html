@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Quiet Shelf | Admin Panel</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="admin">
+
+    <!-- Sidebar -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>The Quiet Shelf</h2>
+        <p>Admin Panel</p>
+    </div>
+
+    <ul>
+
+        <li id="dashboardBtn" class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        
+        
+
+    </ul>
+
+</aside>
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="top-bar">
+
+            <h1>Dashboard</h1>
+
+            <div class="admin-user">
+
+                Welcome, Zay 👋
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Total Novels</h3>
+
+                <span id="totalNovels">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Chapters</h3>
+
+                <span id="totalChapters">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Readers</h3>
+
+                <span id="totalReaders">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Featured Books</h3>
+
+                <span id="featuredBooks">0</span>
+
+            </div>
+
+        </div>
+            <!-- =========================
+         ADD NEW NOVEL
+    ========================== -->
+
+    <section class="admin-section">
+
+        <h2>Add New Novel</h2>
+
+        <form id="novelForm">
+
+            <input
+                type="text"
+                id="novelTitle"
+                placeholder="Novel Title"
+                required
+            >
+
+            <select id="novelGenre">
+
+    <option value="Fantasy">Fantasy</option>
+
+    <option value="Mystery">Mystery</option>
+
+    <option value="Horror">Horror</option>
+
+    <option value="Adventure">Adventure</option>
+
+    <option value="Magic">Magic</option>
+
+    <option value="Drama">Drama</option>
+
+    <option value="Action">Action</option>
+
+    <option value="Science Fiction">Science Fiction</option>
+
+    <option value="Historical">Historical</option>
+
+    <option value="Thriller">Thriller</option>
+
+    <option value="Psychological">Psychological</option>
+
+    <option value="Supernatural">Supernatural</option>
+
+</select>
+
+            <textarea
+                id="novelDescription"
+                placeholder="Novel Description"
+                rows="5"
+                required
+            ></textarea>
+
+            <input
+                type="text"
+                id="novelCover"
+                placeholder="Cover Image Path (images/covers/book1.jpg)"
+                required
+            >
+
+            <input
+                type="number"
+                id="novelChapters"
+                placeholder="Total Chapters"
+                required
+            >
+
+            <select id="novelStatus">
+
+                <option value="Ongoing">Ongoing</option>
+
+                <option value="Completed">Completed</option>
+
+            </select>
+
+            <button type="submit">
+                Save Novel
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- =========================
+         ADD CHAPTER
+    ========================== -->
+
+    <section class="admin-section">
+
+        <h2>Add Chapter</h2>
+
+        <form id="chapterForm">
+
+            <select id="novelSelect">
+
+                <option value="">
+                    Select Novel
+                </option>
+
+            </select>
+
+            <input
+                type="number"
+                id="chapterNumber"
+                placeholder="Chapter Number"
+                required
+            >
+
+            <input
+                type="text"
+                id="chapterTitle"
+                placeholder="Chapter Title"
+                required
+            >
+
+            <textarea
+                id="story"
+                placeholder="Write Chapter Here..."
+                rows="10"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Save Chapter
+            </button>
+
+        </form>
+
+    </section>
+
+    </main>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>

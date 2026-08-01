@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | The Quiet Shelf</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="profile.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+     <div class="logo">
+       <img src="images/logo.png" alt="The Quiet Shelf Logo">
+     </div>
+
+       <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="novels.html">Novels</a>
+
+    <a href="about.html">About</a>
+
+    
+     <div class="account-menu">
+
+    <button class="account-btn" id="accountBtn">
+
+<div class="account-avatar">
+
+    <img
+        id="navbarAvatar"
+        src="images/default-user.png"
+        alt="Avatar"
+    >
+
+</div>
+
+        <span id="accountName">Account</span>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+
+    </button>
+
+    <div class="account-dropdown" id="dropdownMenu">
+
+        <div class="user-info">
+
+            <div class="avatar-large">
+
+    <img
+        id="dropdownAvatar"
+        src="images/default-user.png"
+        alt="Avatar"
+    >
+
+</div>
+
+            <h4 id="userName">Guest</h4>
+
+            <p id="userEmail">Please Login</p>
+
+        </div>
+
+        <hr>
+
+        <a href="login.html" id="loginLink">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Login
+        </a>
+
+        <a href="signup.html" id="signupLink">
+            <i class="fa-solid fa-user-plus"></i>
+            Create Account
+        </a>
+        <a href="profile.html" id="profileLink" style="display:none;">
+    <i class="fa-solid fa-user"></i>
+    Profile
+</a>
+        <a href="library.html" id="libraryLink" style="display:none;">
+            <i class="fa-solid fa-book"></i>
+            My Library
+        </a>
+
+        <a href="bookmarks.html" id="bookmarkLink" style="display:none;">
+            <i class="fa-solid fa-heart"></i>
+            Bookmarks
+        </a>
+
+        <a href="admin.html" id="adminLink" style="display:none;">
+            <i class="fa-solid fa-shield-halved"></i>
+            Admin Panel
+        </a>
+
+        <a href="#" id="logoutLink" style="display:none;">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+
+    </div>
+
+</div>
+
+</nav>
+
+       
+
+    </header>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="profile-container">
+
+<div class="left-side">
+
+<!-- PROFILE CARD -->
+
+<div class="profile-card">
+
+<img
+id="selectedAvatar"
+src="images/avatars/avatar1.png"
+class="selected-avatar"
+>
+
+<h2 id="profileName">
+
+Reader
+
+</h2>
+
+<p id="profileEmail">
+
+Loading...
+
+</p>
+
+</div>
+
+<!-- AVATAR CARD -->
+
+<div class="profile-card">
+
+<h3>
+
+Choose Your Avatar
+
+</h3>
+
+<div class="avatar-grid">
+
+<img src="images/avatars/avatar1.png" class="avatar">
+<img src="images/avatars/avatar2.png" class="avatar">
+<img src="images/avatars/avatar3.png" class="avatar">
+<img src="images/avatars/avatar4.png" class="avatar">
+<img src="images/avatars/avatar5.png" class="avatar">
+<img src="images/avatars/avatar6.png" class="avatar">
+<img src="images/avatars/avatar7.png" class="avatar">
+<img src="images/avatars/avatar8.png" class="avatar">
+<img src="images/avatars/avatar9.png" class="avatar">
+<img src="images/avatars/avatar10.png" class="avatar">
+<img src="images/avatars/avatar11.png" class="avatar">
+<img src="images/avatars/avatar12.png" class="avatar">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="profile-form">
+
+<h2>
+
+Edit Profile
+
+</h2>
+
+<input
+type="text"
+id="nameInput"
+placeholder="Enter Your Name"
+>
+
+<button id="saveProfile">
+
+Save Changes
+
+</button>
+
+</div>
+
+</section>
+
+<script type="module" src="profile.js"></script>
+<script type="module" src="script.js"></script>
+<link rel="stylesheet" href="responsive.css">
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+/* ===============================
+   ABOUT PAGE
+================================= */
+
+body{
+    background:#E4E0E1;
+    color:#493628;
+}
+
+
+/* ===============================
+   HERO
+================================= */
+
+.about-hero{
+
+    padding:120px 8%;
+    text-align:center;
+    background:linear-gradient(180deg,#E4E0E1,#D6C0B3);
+
+}
+
+.about-hero span{
+
+    color:#AB886D;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.about-hero h1{
+
+    font-size:68px;
+    margin:20px 0;
+    font-family:'Playfair Display',serif;
+    color:#493628;
+
+}
+
+.about-hero p{
+
+    max-width:760px;
+    margin:auto;
+    font-size:18px;
+    line-height:2;
+    color:#5c4c42;
+
+}
+
+
+/* ===============================
+   SECTIONS
+================================= */
+
+.about-section,
+.creator,
+.mission{
+
+    padding:90px 8%;
+
+}
+
+
+/* ===============================
+   CONTENT BLOCK
+================================= */
+
+.content-block{
+
+    max-width:950px;
+    margin:auto;
+    background:#F5F1EE;
+    padding:60px;
+    border-radius:28px;
+    box-shadow:0 15px 40px rgba(73,54,40,.08);
+    border:1px solid rgba(73,54,40,.08);
+
+}
+
+.content-block h2{
+
+    font-size:48px;
+    margin-bottom:25px;
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    color:#493628;
+
+}
+
+.content-block p{
+
+    font-size:17px;
+    line-height:2;
+    margin-bottom:18px;
+    color:#5C4C42;
+
+}
+
+
+/* ===============================
+   STORY
+================================= */
+
+.about-section{
+
+    background:#D6C0B3;
+
+}
+
+
+/* ===============================
+   CREATOR
+================================= */
+
+.creator{
+
+    background:#E4E0E1;
+
+}
+
+.creator-tag{
+
+    display:block;
+    text-align:center;
+    color:#AB886D;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:600;
+
+}
+
+.creator h2{
+
+    margin-top:15px;
+
+}
+
+.creator blockquote{
+
+    margin-top:35px;
+    padding:25px;
+    border-left:5px solid #AB886D;
+    background:#E4E0E1;
+    border-radius:15px;
+    color:#493628;
+    font-style:italic;
+    line-height:1.8;
+
+}
+
+
+/* ===============================
+   MISSION
+================================= */
+
+.mission{
+
+    background:#AB886D;
+
+}
+
+.dark{
+
+    background:#493628;
+
+}
+
+.dark h2{
+
+    color:white;
+
+}
+
+.dark p{
+
+    color:#F2ECE8;
+
+}
+
+
+/* ===============================
+   ACTIVE LINK
+================================= */
+
+nav a.active{
+
+    color:#AB886D;
+    font-weight:600;
+
+}
+
+
+/* ===============================
+   ANIMATION
+================================= */
+
+.content-block{
+
+    transition:.35s;
+
+}
+
+.content-block:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media(max-width:768px){
+
+.about-hero{
+
+    padding:80px 20px;
+
+}
+
+.about-hero h1{
+
+    font-size:42px;
+
+}
+
+.about-hero p{
+
+    font-size:16px;
+
+}
+
+.about-section,
+.creator,
+.mission{
+
+    padding:60px 20px;
+
+}
+
+.content-block{
+
+    padding:35px 25px;
+
+}
+
+.content-block h2{
+
+    font-size:34px;
+
+}
+
+.content-block p{
+
+    font-size:16px;
+
+}
+
+.creator blockquote{
+
+    padding:18px;
+
+}
+
+}

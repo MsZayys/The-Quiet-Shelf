@@ -1,0 +1,3094 @@
+/* ===============================
+   GOOGLE RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F7F3EC;
+
+    color:#4B3A2F;
+
+}
+
+
+
+/* ===============================
+NAVBAR
+================================== */
+
+header{
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 7%;
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    overflow:visible;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+    width: 350px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.logo h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+}
+
+.logo p{
+
+    color:#9a8d81;
+
+    font-size:13px;
+
+}
+
+
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#4B3A2F;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#B38B59;
+
+}
+
+
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+}
+
+.nav-icons i{
+    font-size:28px;
+    color:#4B3A2F;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.nav-icons i:hover{
+    color:#8B6A4E;
+    transform:scale(1.12);
+}
+
+
+/* ===============================
+HERO
+================================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:80px 8%;
+
+    background:linear-gradient(to bottom,#F7F3EC,#F3EBDD);
+
+}
+
+.hero-text{
+
+    width:50%;
+
+}
+
+.hero-text h1{
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    font-family:'Playfair Display',serif;
+
+    color:#4B3A2F;
+
+}
+
+.hero-text p{
+
+    margin-top:30px;
+
+    font-size:19px;
+
+    line-height:2;
+
+    color:#7A6B5F;
+
+    max-width:550px;
+
+}
+
+.hero button{
+
+    margin-top:35px;
+
+    padding:16px 42px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#8B6A4E;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(139,106,78,.3);
+
+}
+
+.hero button:hover{
+
+    transform:translateY(-4px);
+
+    background:#6f533c;
+
+}
+
+.hero button:hover{
+
+    transform:translateY(-5px);
+
+    background:#6f533c;
+
+}
+
+.hero-image{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:560px;
+
+    border-radius:30px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+}
+
+
+
+
+/* ===============================
+SECTIONS
+================================== */
+
+section{
+
+    padding:50px 8%;
+
+}
+
+section h2{
+
+    font-size:42px;
+
+    font-family:'Playfair Display',serif;
+
+}
+/* ===============================
+FEATURED NOVELS
+================================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.feature-card{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.6);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 25px 60px rgba(139,106,78,.18);
+
+}
+
+.feature-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#F5E8DA;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:30px;
+
+    color:#4B3A2F;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#6D5B4D;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+
+    font-size:58px;
+
+    font-family:'Playfair Display',serif;
+
+    color:#4B3A2F;
+
+    margin-bottom:18px;
+
+}
+
+.section-title p{
+
+    color:#8B7A6C;
+
+    font-size:20px;
+
+    width:650px;
+
+    max-width:90%;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.novel-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
+}
+
+.novel-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.novel-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(0,0,0,.12);
+}
+
+.novel-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+.novel-info{
+    padding:25px;
+}
+.novel-meta{
+
+    color:#8B6A4E;
+    font-size:15px;
+    margin:12px 0 18px;
+
+}
+
+.genre{
+    display:inline-block;
+    background:#F3EBDD;
+    color:#8B6A4E;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.novel-info h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:26px;
+
+    color:#4B3A2F;
+
+    margin:10px 0;
+
+    line-height:1.4;
+
+}
+
+.novel-info p{
+
+    color:#7A6B5F;
+    line-height:1.8;
+    margin-bottom:25px;
+
+}
+
+.novel-info button{
+
+    width:100%;
+    border:none;
+    background:#8B6A4E;
+    color:white;
+    padding:14px;
+    border-radius:40px;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.novel-info button:hover{
+
+    background:#6F533C;
+
+}
+/*========== SECTION TITLE ==========*/
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+
+    font-size:48px;
+
+    font-family:'Playfair Display',serif;
+
+    color:#4B3A2F;
+
+}
+
+.section-title p{
+
+    width:700px;
+
+    max-width:90%;
+
+    margin:15px auto 0;
+
+    color:#8A7B6F;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/*========== FEATURED STORIES ==========*/
+
+.popular{
+
+    background:#fff;
+
+    padding:120px 8%;
+
+}
+
+.novel-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.novel-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.novel-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+.novel-card img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.novel-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.novel-info{
+
+    padding:20px;
+
+}
+
+.genre{
+
+    display:inline-block;
+
+    padding:7px 16px;
+
+    background:#F4E8D7;
+
+    color:#8B6A4E;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+}
+
+.novel-info h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:26px;
+
+    color:#4B3A2F;
+
+    margin:10px 0;
+
+    line-height:1.4;
+
+}
+
+.novel-info p{
+
+    color:#8A7B6F;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+
+}
+
+.novel-info button{
+
+    width:100%;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:40px;
+
+    background:#8B6A4E;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.novel-info button:hover{
+
+    background:#6F533C;
+
+}
+/*=========================
+QUOTE SECTION
+=========================*/
+
+.quote{
+
+    width:85%;
+    margin:100px auto;
+    background:linear-gradient(135deg,#8B6A4E,#5F4735);
+    border-radius:30px;
+    padding:70px 60px;
+    text-align:center;
+    color:white;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.quote h2{
+
+    font-size:50px;
+    font-family:'Playfair Display',serif;
+    line-height:1.6;
+    color:white;
+
+}
+
+
+
+/*=================================
+FOOTER
+=================================*/
+
+footer{
+
+    margin-top:120px;
+
+    background:#4B3A2F;
+
+    color:white;
+
+    padding:80px 8% 30px;
+
+}
+
+.footer-top{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+.footer-brand img{
+
+    width:230px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-brand p{
+
+    color:#E8DDD1;
+
+    line-height:1.9;
+
+    max-width:380px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links h3{
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:28px;
+
+}
+
+.footer-links a{
+
+    color:#DCCFC2;
+
+    text-decoration:none;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:white;
+
+    padding-left:8px;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:50px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:#DCCFC2;
+
+}
+/*====================================
+STORY QUOTE
+====================================*/
+
+.story-quote{
+
+    width:85%;
+
+    margin:90px auto;
+
+    background:linear-gradient(135deg,#8B6A4E,#6B4D38);
+
+    border-radius:35px;
+
+    padding:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+
+}
+
+.quote-text{
+
+    flex:1;
+
+}
+
+.quote-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.quote-text h2{
+
+    color:white;
+
+    font-size:48px;
+
+    line-height:1.4;
+
+    font-family:'Playfair Display',serif;
+
+    margin-bottom:25px;
+
+}
+
+.quote-text p{
+
+    color:#F4ECE4;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.quote-text button{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#6B4D38;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.quote-text button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.quote-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.quote-image img{
+
+    width:100%;
+
+    max-width:430px;
+
+    animation:floatBook 5s ease-in-out infinite;
+
+}
+
+@keyframes floatBook{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+/*==========================
+FEATURE WRAPPER
+==========================*/
+
+.feature-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .9fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    margin-top:70px;
+
+}
+
+.feature-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.feature-image img{
+
+    width:100%;
+
+    max-width:480px;
+
+    border-radius:25px;
+
+    filter:drop-shadow(0 25px 45px rgba(0,0,0,.18));
+
+    animation:floatImage 5s ease-in-out infinite;
+
+}
+.features{
+
+    padding:120px 8%;
+
+    background:linear-gradient(180deg,#FDFBF7,#F6F1EA);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.features::before{
+
+    content:"";
+
+    width:350px;
+
+    height:350px;
+
+    background:#EEDFCF;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:-170px;
+
+    left:-120px;
+
+    opacity:.35;
+
+}
+
+.features::after{
+
+    content:"";
+
+    width:250px;
+
+    height:250px;
+
+    background:#F3E8DB;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    bottom:-120px;
+
+    right:-80px;
+
+    opacity:.5;
+
+}
+@keyframes floatImage{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+/*==================================
+READ PAGE
+==================================*/
+
+body{
+
+    background:#F8F4EE;
+
+    font-family:'Poppins',sans-serif;
+
+    color:#4B3A2F;
+
+}
+
+.read-header{
+
+    width:90%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:#6F533C;
+
+    font-weight:600;
+
+    background:white;
+
+    padding:12px 22px;
+
+    border-radius:40px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.read-logo{
+
+    width:90px;
+
+}
+
+.reading-container{
+
+    width:75%;
+
+    max-width:900px;
+
+    margin:40px auto 100px;
+
+    background:white;
+
+    padding:70px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.genre-tag{
+
+    display:inline-block;
+
+    background:#F2E5D8;
+
+    color:#8B6A4E;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.reading-container h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+.reading-container h3{
+
+    font-size:22px;
+
+    color:#8B6A4E;
+
+    margin-bottom:30px;
+
+}
+
+.reading-info{
+
+    display:flex;
+
+    gap:30px;
+
+    color:#8A7B6F;
+
+    margin-bottom:45px;
+
+    border-bottom:1px solid #EEE5DA;
+
+    padding-bottom:25px;
+
+}
+
+.story-text{
+
+    font-size:19px;
+
+    line-height:2.3;
+
+    color:#4B3A2F;
+
+}
+
+.story-text p{
+
+    margin-bottom:30px;
+
+}
+
+.chapter-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:70px;
+
+}
+
+.chapter-buttons button{
+
+    border:none;
+
+    background:#8B6A4E;
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.chapter-buttons button:hover{
+
+    background:#6F533C;
+
+    transform:translateY(-3px);
+
+}
+.reading-tools{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+.reading-tools button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#F2E5D8;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.reading-tools button:hover{
+
+    background:#8B6A4E;
+
+    color:white;
+
+}
+/*==================================
+CHAPTER LIST
+==================================*/
+
+.chapter-list{
+
+    background:#FBF7F2;
+
+    border:1px solid #E8DDD1;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:40px;
+
+}
+
+.chapter-list h4{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+    color:#4B3A2F;
+
+}
+
+.chapter-list a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#6F533C;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+
+}
+
+.chapter-list a:hover{
+
+    background:#EFE2D4;
+
+}
+
+.chapter-list .active{
+
+    background:#8B6A4E;
+
+    color:white;
+
+}
+/*==================================
+ACCOUNT MENU
+==================================*/
+
+.account-menu{
+    position:relative;
+}
+
+.account-btn{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    border:none;
+    background:white;
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.account-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.account-avatar{
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:#8B6A4E;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+}
+
+.account-btn span{
+
+    font-weight:600;
+
+    color:#4B3A2F;
+
+}
+
+.arrow{
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+.account-dropdown{
+
+    position:absolute;
+
+    top:60px;
+
+    right:0;
+
+    width:280px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:none;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    z-index:99999;
+
+}
+
+.account-dropdown.show{
+
+    display:block;
+
+}
+
+.user-info{
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.avatar-large{
+
+    width:70px;
+    height:70px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#8B6A4E;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.user-info h4{
+
+    margin-bottom:5px;
+
+    font-size:18px;
+
+}
+
+.user-info p{
+
+    font-size:13px;
+
+    color:#888;
+
+}
+
+.account-dropdown a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 22px;
+
+    color:#4B3A2F;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.account-dropdown a:hover{
+
+    background:#F7F3EC;
+
+    color:#8B6A4E;
+
+}
+
+.account-dropdown hr{
+
+    border:none;
+
+    border-top:1px solid #eee;
+
+}
+
+/* ===========================
+      MEMBERSHIP PAGE
+=========================== */
+
+.membership{
+
+    max-width:1200px;
+
+    margin:90px auto;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+.membership h1{
+
+    font-size:52px;
+
+    color:#412D15;
+
+    margin-bottom:15px;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.membership p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:60px;
+
+}
+
+.plans{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.plan{
+
+    width:350px;
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.plan:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.plan h2{
+
+    font-size:30px;
+
+    color:#412D15;
+
+    margin-bottom:15px;
+
+}
+
+.plan h3{
+
+    font-size:42px;
+
+    color:#000;
+
+    margin-bottom:25px;
+
+}
+
+.plan ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.plan li{
+
+    margin:16px 0;
+
+    color:#555;
+
+    font-size:17px;
+
+}
+
+.plan-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    background:#412D15;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.plan-btn:hover{
+
+    background:#000;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:-15px;
+
+    right:25px;
+
+    background:#C89B3C;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.premium{
+
+    border:3px solid #C89B3C;
+
+}
+
+@media(max-width:900px){
+
+.plans{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.plan{
+
+    width:100%;
+
+    max-width:380px;
+
+}
+
+}
+/*====================================
+        MEMBERSHIP PAGE
+====================================*/
+
+.membership{
+
+    min-height:100vh;
+
+    background:#F8F6F1;
+
+    padding:100px 20px;
+
+}
+
+.membership-header{
+
+    text-align:center;
+
+    max-width:800px;
+
+    margin:0 auto 70px;
+
+}
+
+.premium-tag{
+
+    display:inline-block;
+
+    background:#412D15;
+
+    color:#ffffff;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+.membership-header h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:60px;
+
+    color:#412D15;
+
+    margin-bottom:20px;
+
+}
+
+.membership-header p{
+
+    color:#6E6258;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/*====================*/
+
+.plans{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+/*====================*/
+
+.plan{
+
+    width:360px;
+
+    background:#FFFFFF;
+
+    border:2px solid #E1DCC9;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    transition:.35s;
+
+    position:relative;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.plan:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(65,45,21,.15);
+
+}
+
+/*====================*/
+
+.plan h2{
+
+    color:#412D15;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.plan h3{
+
+    color:#412D15;
+
+    font-size:42px;
+
+    margin-bottom:30px;
+
+}
+
+.plan small{
+
+    font-size:18px;
+
+    color:#777;
+
+}
+
+/*====================*/
+
+.plan ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.plan li{
+
+    color:#555;
+
+    margin:18px 0;
+
+    font-size:17px;
+
+}
+
+/*====================*/
+
+.plan-btn{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    margin-top:35px;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    background:#412D15;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.plan-btn:hover{
+
+    background:#6A4A26;
+
+}
+
+/*====================*/
+
+.premium{
+
+    border:2px solid #C89B3C;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:-16px;
+
+    right:25px;
+
+    background:#C89B3C;
+
+    color:#ffffff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/*====================*/
+
+.membership-note{
+
+    text-align:center;
+
+    margin-top:70px;
+
+}
+
+.membership-note p{
+
+    color:#777;
+
+    font-size:16px;
+
+}
+
+/*====================*/
+
+@media(max-width:768px){
+
+.membership-header h1{
+
+    font-size:42px;
+
+}
+
+.membership-header p{
+
+    font-size:16px;
+
+}
+
+.plan{
+
+    width:100%;
+
+    max-width:380px;
+
+}
+
+}
+/*====================================
+        PREMIUM FEATURES
+====================================*/
+
+.premium-features{
+
+    margin-top:100px;
+
+    text-align:center;
+
+}
+
+.premium-features h2{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:42px;
+
+    color:#412D15;
+
+    margin-bottom:50px;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:#fff;
+
+    border:2px solid #E1DCC9;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    color:#412D15;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+/*==============================
+            FAQ
+==============================*/
+
+.faq-section{
+
+    margin-top:100px;
+
+}
+
+.faq-section h2{
+
+    text-align:center;
+
+    font-family:"Playfair Display", serif;
+
+    color:#412D15;
+
+    margin-bottom:50px;
+
+}
+
+.faq-item{
+
+    background:#fff;
+
+    border:2px solid #E1DCC9;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.faq-item h3{
+
+    color:#412D15;
+
+    margin-bottom:10px;
+
+}
+
+.faq-item p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+/* ===============================
+   READ PAGE V2
+================================== */
+
+.reading-container{
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+    padding:20px;
+
+}
+
+/* =============================== */
+
+.novel-header{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+/* =============================== */
+
+.novel-cover img{
+
+    width:220px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.20);
+
+}
+
+/* =============================== */
+
+.novel-details{
+
+    flex:1;
+
+}
+
+.novel-details h1{
+
+    font-size:58px;
+
+    margin:15px 0;
+
+    color:#1F150C;
+
+}
+
+.novel-description{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin:20px 0;
+
+    max-width:700px;
+
+}
+
+/* =============================== */
+
+.novel-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.novel-meta span{
+
+    background:#F4ECE2;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+}
+
+/* =============================== */
+
+.reading-layout{
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    gap:35px;
+
+}
+
+/* =============================== */
+
+.chapter-list{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    height:fit-content;
+
+    position:sticky;
+
+    top:100px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.chapter-list h3{
+
+    margin-bottom:20px;
+
+}
+
+.chapter-list a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#412D15;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+
+}
+
+.chapter-list a.active{
+
+    background:#8A6746;
+
+    color:white;
+
+}
+
+.chapter-list a:hover{
+
+    background:#EFE5D8;
+
+}
+
+/* =============================== */
+
+.story-area{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/* =============================== */
+
+.story-area h2{
+
+    margin-bottom:25px;
+
+    font-size:36px;
+
+}
+
+.story-text{
+
+    font-size:20px;
+
+    line-height:2.1;
+
+    color:#2D2118;
+
+}
+
+/* =============================== */
+
+.reading-tools{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.reading-tools button{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#412D15;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.reading-tools button:hover{
+
+    background:#5C4022;
+
+}
+
+/* =============================== */
+
+.chapter-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:50px;
+
+}
+
+.chapter-buttons button{
+
+    background:#412D15;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.chapter-buttons button:hover{
+
+    background:#5C4022;
+
+}
+
+/* =============================== */
+
+@media(max-width:900px){
+
+.novel-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.reading-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.chapter-list{
+
+    position:relative;
+
+    top:0;
+
+}
+
+.novel-details h1{
+
+    font-size:42px;
+
+}
+
+}
+/* ===============================
+   READING TOOLS
+================================= */
+.reading-tools{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin:25px 0;
+
+}
+
+.reading-tools button{
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#8B6A4E;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    white-space:nowrap;
+
+}
+.reading-tools button:hover{
+
+    background:#6f533c;
+
+    transform:translateY(-3px);
+
+}
+
+#bookmarkBtn{
+
+    background:#D77A8A;
+
+    min-width:140px;
+
+}
+
+#bookmarkBtn:hover{
+
+    background:#C86476;
+
+}
+/* ===============================
+   COZY DARK MODE
+================================= */
+
+.dark-mode{
+
+    background:#2F2621;
+    color:#F5EEE6;
+
+}
+
+.dark-mode header{
+
+    background:#3A2E28;
+
+}
+
+.dark-mode .reading-container{
+
+    background:transparent;
+
+}
+
+.dark-mode .novel-header,
+.dark-mode .chapter-list,
+.dark-mode .story-area{
+
+    background:#3A2E28;
+    color:#F5EEE6;
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.dark-mode .story-text,
+.dark-mode .novel-description,
+.dark-mode p{
+
+    color:#E8DDD3;
+
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3{
+
+    color:#FFF8F0;
+
+}
+
+.dark-mode .chapter-list a{
+
+    color:#E8DDD3;
+
+}
+
+.dark-mode .chapter-list a:hover{
+
+    background:#AB886D;
+    color:white;
+
+}
+
+.dark-mode .chapter-list a.active{
+
+    background:#AB886D;
+    color:white;
+
+}
+
+.dark-mode .reading-tools button{
+
+    background:#AB886D;
+    color:white;
+
+}
+
+.dark-mode .chapter-buttons button{
+
+    background:#AB886D;
+    color:white;
+
+}
+
+.dark-mode footer{
+
+    background:#3A2E28;
+
+}
+/* ===============================
+   COMMENTS
+================================= */
+
+.comments-section{
+
+    max-width:1000px;
+
+    margin:70px auto;
+
+    padding:0 20px;
+
+}
+
+.comments-section h2{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    color:#493628;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.comment-box{
+
+    background:#F8F5F2;
+
+    border:1px solid #D6C0B3;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:40px;
+
+}
+
+.comment-box textarea{
+
+    width:100%;
+
+    min-height:140px;
+
+    border:none;
+
+    resize:vertical;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    color:#493628;
+
+}
+
+.comment-box button{
+
+    margin-top:18px;
+
+    background:#493628;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.comment-box button:hover{
+
+    background:#AB886D;
+
+}
+
+.comment-card{
+
+    background:white;
+
+    border:1px solid #E4E0E1;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.comment-card h4{
+
+    color:#493628;
+
+    margin-bottom:8px;
+
+}
+
+.comment-card small{
+
+    color:#888;
+
+}
+
+.comment-card p{
+
+    margin-top:12px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+#translateBtn{
+
+    background:#9B7355;
+    color:#fff;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    min-width:165px;
+    height:50px;
+
+    flex:0 0 auto;
+
+    transition:.3s;
+
+}
+
+#translateBtn i{
+
+    font-size:18px;
+
+}
+#translateBtn:hover{
+
+    background:#7f5c43;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+}
+
+.dark-mode #translateBtn{
+
+    background:#C8A77A;
+
+    color:#2d241d;
+
+}
+/* ===============================
+   RATING
+================================= */
+
+.rating-section{
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+    padding:30px;
+
+    background:#F8F5F2;
+
+    border:1px solid #E4E0E1;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.rating-section h3{
+
+    font-size:30px;
+
+    color:#493628;
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.stars{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.star{
+
+    font-size:34px;
+
+    color:#CFCFCF;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.star:hover{
+
+    color:#FFD43B;
+
+    transform:scale(1.2);
+
+}
+
+.star.active{
+
+    color:#FFD43B;
+
+}
+
+.rating-section p{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-top:10px;
+
+}
+
+/* Dark Mode */
+
+.dark-mode .rating-section{
+
+    background:#3A2E28;
+
+    border-color:rgba(255,255,255,.08);
+
+}
+
+.dark-mode .rating-section h3{
+
+    color:#FFF8F0;
+
+}
+
+.dark-mode .rating-section p{
+
+    color:#E8DDD3;
+
+}
+.account-avatar img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.avatar-large img{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+.comment-user{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+.comment-avatar{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    flex-shrink:0;
+
+}
+
+.comment-user h4{
+
+    margin-bottom:6px;
+
+    color:#4B3A2F;
+
+}
+
+.comment-user p{
+
+    margin:0;
+
+    line-height:1.7;
+
+}
+.comment-info{
+
+    flex:1;
+
+}
+
+.comment-time{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#999;
+
+    margin:4px 0 10px;
+
+}
+.comment-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.delete-comment{
+
+    color:#d9534f;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.delete-comment:hover{
+
+    transform:scale(1.15);
+
+    color:#b71c1c;
+
+}
+/*==============================
+QUIET QUOTE
+==============================*/
+
+.reading-quote{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    background:#FFF9F2;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.quote-content{
+
+    padding:45px;
+
+}
+
+.quote-tag{
+
+    display:inline-block;
+
+    background:#F4E8DA;
+
+    color:#8B6A4E;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.quote-content h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    color:#4B3A2F;
+
+    margin-bottom:25px;
+
+}
+
+.quote-content p{
+
+    font-size:16px;
+
+line-height:1.7;
+
+    color:#7A6B5F;
+
+    
+
+margin-bottom:25px;
+
+}
+
+.quote-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#8B6A4E;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.quote-btn:hover{
+
+    background:#6F533C;
+
+    transform:translateY(-3px);
+
+}
+
+.quote-image{
+
+    height:420px;
+
+}
+
+.quote-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+@media(max-width:900px){
+
+.reading-quote{
+
+    grid-template-columns:1fr;
+
+}
+
+.quote-content{
+
+    padding:40px 25px;
+
+    text-align:center;
+
+}
+
+.quote-content h2{
+
+    font-size:34px;
+
+}
+
+.quote-image{
+
+    order:-1;
+
+}
+
+}

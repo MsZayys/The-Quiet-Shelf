@@ -1,0 +1,271 @@
+/*==================================
+RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#F7F3EC,#EFE4D7);
+
+    min-height:100vh;
+
+}
+/*==================================
+LOGIN PAGE
+==================================*/
+
+.login-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+/*==================================
+LOGIN BOX
+==================================*/
+
+.login-box{
+
+    width:420px;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+.login-logo{
+
+    width:220px;
+
+    margin-bottom:25px;
+
+}
+/*==================================
+HEADING
+==================================*/
+
+.login-box h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:42px;
+
+    color:#4B3A2F;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    color:#8B7A6C;
+
+    font-size:16px;
+
+    margin-bottom:35px;
+
+}
+/*==================================
+INPUTS
+==================================*/
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#F8F4EE;
+
+    border:2px solid transparent;
+
+    border-radius:50px;
+
+    padding:16px 20px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+.input-box:focus-within{
+
+    border-color:#8B6A4E;
+
+    background:white;
+
+}
+
+.input-box i{
+
+    color:#8B6A4E;
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    color:#4B3A2F;
+
+    font-family:'Poppins',sans-serif;
+
+}
+/*==================================
+LOGIN BUTTON
+==================================*/
+
+.login-box button{
+
+    width:100%;
+
+    border:none;
+
+    background:#8B6A4E;
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+.login-box button:hover{
+
+    background:#6F533C;
+
+    transform:translateY(-3px);
+
+}
+/*==================================
+SIGN UP TEXT
+==================================*/
+
+.signup-text{
+
+    margin-top:30px;
+
+    color:#8B7A6C;
+
+    font-size:15px;
+
+}
+
+.signup-text a{
+
+    color:#8B6A4E;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.signup-text a:hover{
+
+    color:#6F533C;
+
+    text-decoration:underline;
+
+}
+/*==================================
+ANIMATION
+==================================*/
+
+.login-box{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+/*==================================
+MOBILE
+==================================*/
+
+@media(max-width:500px){
+
+.login-box{
+
+    width:100%;
+    padding:35px 25px;
+
+}
+
+.login-logo{
+
+    width:180px;
+
+}
+
+.login-box h1{
+
+    font-size:34px;
+
+}
+
+}

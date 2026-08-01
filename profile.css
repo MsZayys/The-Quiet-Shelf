@@ -1,0 +1,249 @@
+/* ===========================
+   PROFILE PAGE
+=========================== */
+
+body{
+
+    margin:0;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8F5F2;
+
+    color:#493628;
+
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.profile-container{
+
+    max-width:1300px;
+
+    margin:60px auto;
+
+    display:flex;
+
+    gap:35px;
+
+    align-items:flex-start;
+
+    padding:0 20px;
+
+}
+
+.left-side{
+
+    width:420px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.profile-card,
+.profile-form{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border:1px solid #E4E0E1;
+
+}
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+
+.profile-card{
+
+    text-align:center;
+
+}
+
+.selected-avatar{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #AB886D;
+
+    margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+    font-size:36px;
+
+    font-family:'Playfair Display',serif;
+
+    margin:10px 0;
+
+    color:#493628;
+
+}
+
+.profile-card p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   AVATARS
+=========================== */
+
+.avatar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.avatar{
+
+    width:75px;
+    height:75px;
+
+    border-radius:50%;
+    object-fit:cover;
+    cursor:pointer;
+    border:3px solid transparent;
+    transition:.3s;
+
+}
+
+.avatar:hover{
+
+    transform:scale(1.08);
+
+    border-color:#AB886D;
+
+}
+
+.avatar.active{
+
+    border-color:#493628;
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   EDIT PROFILE
+=========================== */
+
+.profile-form{
+
+    flex:1;
+
+}
+
+.profile-form h2{
+
+    font-size:48px;
+
+    margin-bottom:35px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.profile-form input{
+
+    width:100%;
+
+    padding:18px;
+
+    font-size:17px;
+
+    border-radius:15px;
+
+    border:1px solid #D6C0B3;
+
+    outline:none;
+
+    margin-bottom:25px;
+
+    box-sizing:border-box;
+
+}
+
+.profile-form input:focus{
+
+    border-color:#AB886D;
+
+}
+
+.profile-form button{
+
+    background:#493628;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 35px;
+
+    border-radius:15px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.profile-form button:hover{
+
+    background:#AB886D;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.profile-container{
+
+    flex-direction:column;
+
+}
+
+.left-side{
+
+    width:100%;
+
+}
+
+}
