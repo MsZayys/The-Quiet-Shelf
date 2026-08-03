@@ -44,7 +44,7 @@ const bookmarkBtn = document.getElementById("bookmarkBtn");
 const increaseBtn = document.getElementById("increaseFont");
 const decreaseBtn = document.getElementById("decreaseFont");
 const darkModeBtn = document.getElementById("darkMode");
-const translateBtn = document.getElementById("translateBtn");
+
 const stars = document.querySelectorAll(".star");
 const averageRating = document.getElementById("averageRating");
 
@@ -839,66 +839,3 @@ async function start(){
 
 start();
 await loadRating();
-// ===============================
-// Translate Chapter
-// ===============================
-
-if(translateBtn){
-
-translateBtn.onclick = async ()=>{
-
-    const language = prompt(
-
-`Translate to:
-
-ur = Urdu
-hi = Hindi
-ar = Arabic
-tr = Turkish
-es = Spanish
-fr = French
-ja = Japanese
-ko = Korean
-zh-CN = Chinese
-
-Example: ur`
-
-    );
-
-    if(!language) return;
-
-    const originalText = storyText.innerText;
-
-    try{
-
-        const response = await fetch(
-
-`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${language}&dt=t&q=${encodeURIComponent(originalText)}`
-
-        );
-
-        const data = await response.json();
-
-        let translated = "";
-
-        data[0].forEach(item=>{
-
-            translated += item[0];
-
-        });
-
-        storyText.innerHTML = `<p>${translated}</p>`;
-
-    }
-
-    catch(error){
-
-        alert("Translation failed.");
-
-        console.log(error);
-
-    }
-
-};
-
-}

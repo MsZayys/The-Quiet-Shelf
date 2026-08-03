@@ -197,27 +197,40 @@ Chapter 3 — Into The Woods
 
 <div class="reading-tools">
 
-    <button id="decreaseFont">
-        A-
-    </button>
+    <button id="decreaseFont">A-</button>
 
-    <button id="increaseFont">
-        A+
-    </button>
+    <button id="increaseFont">A+</button>
 
-    <button id="darkMode">
-        🌙
-    </button>
+    <button id="darkMode">🌙</button>
 
     <button id="bookmarkBtn">
         ❤️ Bookmark
     </button>
-    
-<button id="translateBtn">
-    <i class="fa-solid fa-language"></i>
-    Translate
-</button>
-    
+
+</div>
+
+<div class="translate-box">
+
+    <div class="translate-icon">
+
+        <i class="fa-solid fa-language"></i>
+
+    </div>
+
+    <h3 class="translate-title">
+
+        Read in Your Language
+
+    </h3>
+
+    <p>
+
+        Choose any language below and enjoy reading the story in your preferred language.
+
+    </p>
+
+    <div id="google_translate_element"></div>
+
 </div>
 
 <!-- STORY -->
@@ -377,7 +390,15 @@ and every page feels like home.
 <script type="module" src="script.js"></script>
 <script type="module" src="read.js"></script>
 <link rel="stylesheet" href="responsive.css">
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: "en"
+    }, "google_translate_element");
+}
+</script>
 
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
