@@ -1,4 +1,6 @@
 import {
+    auth,
+    onAuthStateChanged,
     db,
     collection,
     addDoc,
@@ -6,6 +8,33 @@ import {
     doc,
     deleteDoc
 } from "./firebase.js";
+
+const ADMIN_EMAIL = "littlezayys93@gmail.com";
+
+onAuthStateChanged(auth, (user) => {
+
+    if (!user) {
+
+        alert("Please login first.");
+
+        window.location.href = "login.html";
+
+        return;
+
+    }
+
+    if (user.email !== ADMIN_EMAIL) {
+
+        alert("Access Denied!");
+
+        window.location.href = "index.html";
+
+        return;
+       
+    }
+startAdmin();
+});
+
 const totalNovels = document.getElementById("totalNovels");
 const totalChapters = document.getElementById("totalChapters");
 const totalReaders = document.getElementById("totalReaders");
@@ -94,8 +123,12 @@ await addDoc(collection(db, "novels"), {
 });
 
         alert("Novel Saved Successfully ✅");
-        loadDashboardStats();
-        novelForm.reset();
+
+await loadNovels();
+await showNovels();
+await loadDashboardStats();
+
+novelForm.reset();
 
     } catch (error) {
 
@@ -129,7 +162,7 @@ async function loadNovels() {
 
 }
 
-loadNovels();
+
 const chapterForm = document.getElementById("chapterForm");
 
 chapterForm.addEventListener("submit", async (e) => {
@@ -160,10 +193,11 @@ chapterForm.addEventListener("submit", async (e) => {
 
 );
 
-        alert("Chapter Saved Successfully ✅");
+   alert("Chapter Saved Successfully ✅");
 
-        chapterForm.reset();
-        loadDashboardStats();
+await loadDashboardStats();
+
+chapterForm.reset();
     } catch (error) {
 
         console.error(error);
@@ -215,8 +249,15 @@ async function showNovels() {
 
 }
 
-showNovels();
-loadDashboardStats();
+ async function startAdmin() {
+
+    await loadNovels();
+
+    await showNovels();
+
+    await loadDashboardStats();
+
+}
 window.deleteNovel = async function (id) {
 
     const confirmDelete = confirm(

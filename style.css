@@ -197,10 +197,20 @@ HERO
 }
 
 .hero button{
+    margin-left:auto;
+margin-right:auto;
 
     margin-top:35px;
 
-    padding:16px 42px;
+    width:220px;
+
+    height:58px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     border:none;
 
@@ -208,11 +218,15 @@ HERO
 
     background:#8B6A4E;
 
-    color:white;
+    color:#fff;
 
     font-size:16px;
 
     font-weight:600;
+
+    line-height:1;
+
+    white-space:nowrap;
 
     cursor:pointer;
 
@@ -1095,19 +1109,17 @@ body{
 
 .reading-container{
 
-    width:75%;
-
-    max-width:900px;
-
+    width:85%;
+    max-width:1100px;
     margin:40px auto 100px;
 
-    background:white;
+    background:transparent;
 
-    padding:70px;
+    padding:0;
 
-    border-radius:30px;
+    border-radius:0;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    box-shadow:none;
 
 }
 
@@ -2101,8 +2113,6 @@ ACCOUNT MENU
 
 }
 
-/* =============================== */
-
 .novel-header{
 
     display:flex;
@@ -2111,34 +2121,17 @@ ACCOUNT MENU
 
     align-items:center;
 
-    background:#fff;
+    background:transparent;
 
-    padding:35px;
+    padding:0;
 
-    border-radius:20px;
+    border-radius:0;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    box-shadow:none;
 
-    margin-bottom:40px;
-
-}
-
-/* =============================== */
-
-.novel-cover img{
-
-    width:220px;
-
-    height:320px;
-
-    object-fit:cover;
-
-    border-radius:18px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.20);
+    margin-bottom:50px;
 
 }
-
 /* =============================== */
 
 .novel-details{
@@ -2211,11 +2204,13 @@ ACCOUNT MENU
 
 .chapter-list{
 
-    background:white;
+    background:transparent;
 
-    border-radius:18px;
+    border:none;
 
-    padding:25px;
+    border-radius:0;
+
+    padding:0;
 
     height:fit-content;
 
@@ -2223,7 +2218,7 @@ ACCOUNT MENU
 
     top:100px;
 
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    box-shadow:none;
 
 }
 
@@ -2241,11 +2236,13 @@ ACCOUNT MENU
 
     color:#412D15;
 
-    padding:15px;
+    padding:14px 0;
 
-    border-radius:12px;
+    border-radius:0;
 
-    margin-bottom:10px;
+    margin-bottom:8px;
+
+    border-bottom:1px solid #E6D8C8;
 
     transition:.3s;
 
@@ -2253,15 +2250,21 @@ ACCOUNT MENU
 
 .chapter-list a.active{
 
-    background:#8A6746;
+    background:none;
 
-    color:white;
+    color:#8A6746;
+
+    font-weight:700;
 
 }
 
 .chapter-list a:hover{
 
-    background:#EFE5D8;
+    background:none;
+
+    color:#A97C50;
+
+    padding-left:10px;
 
 }
 
@@ -2269,13 +2272,13 @@ ACCOUNT MENU
 
 .story-area{
 
-    background:white;
+    background:transparent;
 
-    border-radius:20px;
+    border-radius:0;
 
-    padding:40px;
+    padding:40px 0;
 
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    box-shadow:none;
 
 }
 
