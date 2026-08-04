@@ -11,14 +11,12 @@ import {
 
 const ADMIN_EMAIL = "littlezayys93@gmail.com";
 
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, async (user) => {
 
     if (!user) {
 
         alert("Please login first.");
-
         window.location.href = "login.html";
-
         return;
 
     }
@@ -26,13 +24,13 @@ onAuthStateChanged(auth, (user) => {
     if (user.email !== ADMIN_EMAIL) {
 
         alert("Access Denied!");
-
         window.location.href = "index.html";
-
         return;
-       
+
     }
-startAdmin();
+
+    await startAdmin();
+
 });
 
 const totalNovels = document.getElementById("totalNovels");
@@ -104,56 +102,7 @@ async function loadDashboardStats(){
 
 }
 
-    // Total Novels
-    const novelsSnapshot = await getDocs(
-        collection(db, "novels")
-    );
-
-    totalNovels.textContent = novelsSnapshot.size;
-
-    // Total Chapters
-    let chaptersCount = 0;
-
-    for(const novel of novelsSnapshot.docs){
-
-        const chaptersSnapshot = await getDocs(
-
-            collection(
-                db,
-                "novels",
-                novel.id,
-                "chapters"
-            )
-
-        );
-
-        chaptersCount += chaptersSnapshot.size;
-
-    }
-    
-
-    totalChapters.textContent = chaptersCount;
-    // Total Readers
-let readersCount = 0;
-
-novelsSnapshot.forEach((doc) => {
-
-    const novel = doc.data();
-
-    console.log("Novel Data:", novel);
-
-    readersCount += Number(novel.reads || 0);
-
-});
-
-console.log("Total Readers:", readersCount);
-
-totalReaders.textContent = readersCount;
-
-
-// Featured Books
-featuredBooks.textContent = novelsSnapshot.size;
-
+   
 
 
 novelForm.addEventListener("submit", async (e) => {
@@ -186,19 +135,14 @@ await addDoc(collection(db, "novels"), {
 
         alert("Novel Saved Successfully ✅");
 
-await loadNovels();
-await showNovels();
-await loadDashboardStats();
-
 novelForm.reset();
 
     } catch (error) {
 
-        console.error(error);
+    console.error("FULL ERROR:", error);
+    alert(error.message);
 
-        alert("Error Saving Novel ❌");
-
-    }
+}
 
 });
 const novelSelect = document.getElementById("novelSelect");
