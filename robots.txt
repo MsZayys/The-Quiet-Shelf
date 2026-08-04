@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://mszayys.github.io/The-Quiet-Shelf/sitemap.xml
