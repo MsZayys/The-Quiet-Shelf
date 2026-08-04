@@ -46,6 +46,64 @@ const novelForm = document.getElementById("novelForm");
 
 async function loadDashboardStats(){
 
+    console.log("Dashboard Stats Loading...");
+
+    const novelsSnapshot = await getDocs(
+        collection(db, "novels")
+    );
+
+    console.log("Novels:", novelsSnapshot.size);
+
+    totalNovels.textContent = novelsSnapshot.size;
+
+
+    // Total Chapters
+    let chaptersCount = 0;
+
+    for(const novel of novelsSnapshot.docs){
+
+        const chaptersSnapshot = await getDocs(
+
+            collection(
+                db,
+                "novels",
+                novel.id,
+                "chapters"
+            )
+
+        );
+
+        chaptersCount += chaptersSnapshot.size;
+
+    }
+
+    totalChapters.textContent = chaptersCount;
+
+
+
+    // Total Readers
+
+    let readersCount = 0;
+
+    novelsSnapshot.forEach((doc)=>{
+
+        const novel = doc.data();
+
+        readersCount += Number(novel.reads || 0);
+
+    });
+
+
+    totalReaders.textContent = readersCount;
+
+
+
+    // Featured Books
+
+    featuredBooks.textContent = novelsSnapshot.size;
+
+}
+
     // Total Novels
     const novelsSnapshot = await getDocs(
         collection(db, "novels")
@@ -82,9 +140,13 @@ novelsSnapshot.forEach((doc) => {
 
     const novel = doc.data();
 
+    console.log("Novel Data:", novel);
+
     readersCount += Number(novel.reads || 0);
 
 });
+
+console.log("Total Readers:", readersCount);
 
 totalReaders.textContent = readersCount;
 
@@ -92,7 +154,7 @@ totalReaders.textContent = readersCount;
 // Featured Books
 featuredBooks.textContent = novelsSnapshot.size;
 
-}
+
 
 novelForm.addEventListener("submit", async (e) => {
 
