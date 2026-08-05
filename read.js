@@ -685,8 +685,9 @@ stars.forEach((star)=>{
                 ),
 
                 {
-                    rating:value
-                }
+    rating: value,
+    userId: user.uid
+}
 
             );
                const ratingSnap = await getDocs(
@@ -720,6 +721,8 @@ await updateDoc(
     }
 
 );
+novelRating.textContent = (total / count).toFixed(1);
+averageRating.textContent = (total / count).toFixed(1);
             loadRating();
 
         });
